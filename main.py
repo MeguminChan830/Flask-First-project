@@ -1,2 +1,7 @@
-import urllib
-print(urllib.parse.parse.quote("D6@.bellcranel"))
+from flask import Flask, render_template
+app = Flask(__name__)
+@app.route('/')
+def home():
+    return render_template("index.html", foo="Hello from Server used Foo")
+if __name__=="__main__":
+    app.run()
