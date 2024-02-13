@@ -1,0 +1,37 @@
+{% include 'bootstrap.html' %}
+
+<form action="/submit-job" method="post">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input class="form-control" type="text" placeholder="Title" id="title" name="title">
+    </div>
+    <div class="form-group">
+        <label for="detail">Detail</label>
+        <input class="form-control" type="text" placeholder="Detail" id="detail" name="detail">
+    </div>    
+    <div class="form-group">
+        <label for="location">Location</label>
+        <input class="form-control" type="text" placeholder="Location" id="location" name="location">
+    </div>    
+    <div class="form-group">
+        <label for="responsbilities">Responsibilities</label>
+        <textarea class="form-control" placeholder="Responsibilities" id="responsbilities" name="responsbilities"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="requirements">Requirements</label>
+        <textarea class="form-control" placeholder="Requirements" id="requirements" name="requirements"></textarea>
+    </div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="salalry">Salalry: </label>
+        </div>
+        <input class="form-control" type="number" placeholder="Salalry" id="salalry" name="salalry">
+    <select class="custom-select d-inline" name="currency">
+        <option value="&#65509;">&#65509;</option>
+        <option value="$">$</option>
+        <option value="&#8368;">&#8368;</option>
+    </select>
+    </div>
+    
+    <button class="btn btn-primary">Submit</button>
+</form>
